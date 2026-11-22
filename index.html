@@ -1,1 +1,65 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecaBiblio | Biblioteca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Teca<span>Biblio</span></div>
+  <nav>
+    <a href="#cadastro">Cadastrar</a>
+    <a href="#acervo">Acervo</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <p class="subtitulo">SUA BIBLIOTECA DIGITAL</p>
+  <h1>Conhecimento que merece ser compartilhado.</h1>
+  <p>Organize, descubra e compartilhe livros.</p>
+</section>
+
+<main>
+  <section id="cadastro" class="secao">
+    <h2>Cadastrar novo livro</h2>
+    <p>Preencha os dados para adicionar um livro ao acervo.</p>
+
+    <form id="formLivro">
+      <label for="titulo">Título</label>
+      <input id="titulo" name="titulo" required>
+
+      <label for="autor">Autor</label>
+      <input id="autor" name="autor" required>
+
+      <label for="isbn">ISBN</label>
+      <input id="isbn" name="isbn" required>
+
+      <label for="ano_publicacao">Ano de publicação</label>
+      <input id="ano_publicacao" name="ano_publicacao"
+        type="number" required>
+
+      <button type="submit">Cadastrar livro +</button>
+      <p id="mensagem"></p>
+    </form>
+  </section>
+
+  <section id="acervo" class="secao">
+    <h2>Nosso acervo</h2>
+    <p>Confira os livros disponíveis na biblioteca.</p>
+    <div id="listaLivros" class="livros">
+      <p>Carregando livros...</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>TecaBiblio — Conhecimento para todos.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
